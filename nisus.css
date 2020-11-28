@@ -1,0 +1,50 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+.carousel {
+    background:rgb(213, 206, 230);
+  }
+  
+  .carousel-item {
+  height: 500px;
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;;
+  }
+  
+.head-nisus{
+    background-color: rgb(247, 245, 233);
+    padding-top: 10px;
+}
+.head-nisus input{
+    border-radius: 10px;
+    height: 40px;
+}
+.off-cont{
+    text-align: center;
+    margin-top: 50px;
+}
+.off-cont button{
+    height: 15%;
+    border-radius: 25px;
+}
+.best-deal{
+    text-align: center;
+    margin-top: 90px;
+}
+.pro{
+    margin-top: 130px;
+    padding: 40px;
+    background-color: lavenderblush;
+}
+.review{
+    margin: 70px 0;
+    text-align: center;
+    padding: 20px 0;
+}

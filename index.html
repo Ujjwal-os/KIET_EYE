@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">    
+        <title>KIET-EYE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="nisus.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="file:///home/arjun/Downloads/fontawesome-free-5.12.1-web/css/all.css"> -->
+        <link rel="stylesheet" href="aboutus.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Raleway&display=swap" rel="stylesheet">
+    
+
+        <script src="script.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand mr-sm-10" href="#">KIET-EYE</a>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <a ui-sref="firstMessage()" class="nav-link">
+                            <li class="nav-item active"><span class="fa fa-home fa-lg"></span> Home</li>
+                            </a>
+                            <a ui-sref="thirdMessage()" class="nav-link">
+                            <li class="nav-item"><span class="fa fa-info fa-lg"></span> About</li>
+                            </a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Cafe
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" ui-sref="fourthMessage()">Basic</a>
+                                      <a class="dropdown-item" ui-sref="fifthMessage()">Cafeteria Cafe</a>
+                                      <!-- <a class="dropdown-item" href="#">Nisu's Cafe</a> -->
+                            <li class="nav-item"><a class="nav-link" ui-sref="sixthMessage()"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        </ul> 
+                        <span class="navbar-text">
+                            <a class="fa fa-sign-in" data-target="#mymodel" data-toggle="modal">signin</span></a>
+                        </span>
+                        <span class="navbar-text az">
+                            <a class="fa fa-sign-in" data-target="#mymodels" data-toggle="modal">signup</span></a>
+                        </span>
+                    </div>           
+                </div>
+            </nav>
+            <div class="modal" id="mymodel">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-clr">
+                            <h3 class="text-primary">SignIn</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label> Username:</label>
+                                    <input type="text" placeholder="Enter Username:" id="mail" onfocusout="myFunc()" class="form-control">
+                                    <span id="message" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label> Password:</label>
+                                    <input type="text" placeholder="Enter User Password:" id="pass" onfocusout="myFunc2()"  class="form-control">
+                                    <span id="message2" style="color: red;"></span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label>Forgot Password?</label>
+                                </div>
+                            </form>
+                        </div>
+                            <div class="modal-footer justify-content-center bg-clr">
+                            <button class="btn btn-danger" data-dismiss="modal">SignIn</button>               
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="modal" id="mymodels">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-clr">
+                            <h3 class="text-primary">Signup</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label> Firstname:</label>
+                                    <input type="text" placeholder="Enter firstname:" id="fname" onfocusout="myFunc3()" class="form-control">
+                                    <span id="message3" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label> Lastname:</label>
+                                    <input type="text" placeholder="Enter Lastname:" id="lname" onfocusout="myFunc4()" class="form-control">
+                                    <span id="message4" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Enter mobile number:</label>
+                                    <input type="text" placeholder="Enter Mobile number:" id="num" onfocusout="myFunc5()" class="form-control">
+                                    <span id="message5" style="color: red;"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer justify-content-center bg-clr">
+                            <button class="btn btn-danger" data-dismiss="modal">Send OTP</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+<!-- ---------------------------------------------------slide-------------------------------------------------- -->
+<div class="ui-view"></div>
+
+<script src="index.js"></script>
+<footer>
+    <div class="container-fluid bg-light mt-5">
+        <div class="container">
+            <div class="row" style="padding: 50px 0;">
+            <div class="col-12 col-md-3 mt-3">
+                    <h5>ABOUT US</h5>
+                    <ul class="list-unstyled">
+                        <li><a>About us</a></li>
+                        <li><a>Our vision</a></li>
+                        <li><a >Awards</a></li>
+                        <li><a >FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 mt-3">
+                    <h5>NEWS & MEDIA</h5>
+                    <ul class="list-unstyled">
+                        <li><a >Press releases</a></li>
+                        <li><a >Newsletters</a></li>
+                        <li><a >Events</a></li>
+                        <li><a >Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 mt-3">
+                    <h5>OUR POLICIES</h5>
+                    <ul class="list-unstyled">
+                        <li><a >Privact policy</a></li>
+                        <li><a >Payment polcy</a></li>
+                        <li><a >Declaimers</a></li>
+                        <li><a >Data protection policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-3">
+                    <h5>SIGN UP TO STAY UPDATED</h5>
+                    <input type="text" class="col-12" class="mt-2 mb-2" placeholder="Enter Your Mail">
+                    <button class="btn btn-success mt-3">Suscribe</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-5 offset-md-5 align-center">&copy KIET-EYE</div>
+            </div>
+        </div>
+        
+    </div>
+        </div>
+        </div>
+
+    </div>
+    </footer>
+    </body>
+</html>

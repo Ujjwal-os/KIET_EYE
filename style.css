@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    line-height: 5vh;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 1%;
+    overflow: hidden;
+    z-index: 100;
+    background-color: white;
+}
+header .nav{
+    margin-left: 10%;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 5vw;
+    font-size: 1.7rem;
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+}
+.nav li:hover{
+    border-radius: 30px;
+    background-color: rgb(75, 192, 167);
+    /* font-weight: bold; */
+    color: wheat;
+    transition: ease-in-out 0.5s;
+}
+nav{
+    cursor: pointer;
+}
+/* -------------------------------feature------------------------------ */
+.feature{
+    text-align: center;
+    margin: 5%;
+    background-color: rgb(243, 233, 233);
+    border-radius: 30px;
+    padding: 1%;
+}
+.block:nth-child(2){
+    border-left: 1px solid rgb(75, 192, 167);
+    box-sizing: 60px;
+}
+.block:nth-child(3){
+    border-left: 1px solid rgb(75, 192, 167);
+    box-sizing: 60px;
+    padding-top: 4%;
+}
+.block h3{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+.icon{
+    color: rgb(75, 192, 167);
+}
+/* -----------------------------our team----------------------------- */
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
+
+
+
+.cafe{
+    display: flex;
+    overflow: scroll;
+    margin: 4% 0;
+}
+.cafe::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.cafe-section{
+    position: relative;
+    margin: 1%;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.cafe-section:hover{
+    opacity: 0.7;
+    background-color: #171717;
+    padding: 1%;
+    border-radius: 2%;
+}
+.display{
+    opacity: 1;
+    transition: 0.2s ease;
+    animation: anim 0.2s ease;
+
+}
+.display:hover{
+    width: 40%;
+}
+
+@keyframes anim{
+    from{
+        width: 35%;
+    }
+    to{
+        width: 40%;
+    }
+}
+
+.movie-poster{
+    height: 300px;
+}
+.box{
+    background-color: #5f5a5a;
+    height: fit-content;
+    text-align: center;
+    padding: 3%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 3%; */
+}
+.stars i{
+    padding-right: 2%;
+    color: yellow;
+}
+.heading img{
+    margin-top: -120px;
+}
+.name{
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+}
+.bg-clr{
+    background-color: lavender;
+}
+/* ------------------------------recipi------------------------------- */
+
+.photo{
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+.photo img{
+    border-radius: 50%;
+}
+.peoples{
+    display: flex;
+    overflow: scroll;
+}
+
+.peoples::-webkit-scrollbar,.News-section::-webkit-scrollbar{
+    display: none;
+}
+.people{
+    margin: 2%;
+    text-align: center;
+    display: grid;
+    transition: all 0.3s ease-in-out;
+}
+.people:hover{
+    background-color: #171717;
+    padding: 1%;
+    border-radius: 45%;
+}
+.Age{
+    color: white;
+    font-size: 18px;
+}
+/* --------------------------abut------------------------------- */
+.headings{
+    /* text-align: center; */
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+.headings img{
+    margin-top: -120px;
+}
+.about{
+    font-size: x-large;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+}
+.icon i{
+    margin-left: 1%;
+}
+.iconS{
+    text-align: center;
+    margin-top: 3%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 1%;
+}
+.copy{
+    font-weight: 700;
+}
+.navbar-text a span{
+    color: wheat;
+    /* padding: 70px 70px 70px 70px; */
+}
+.az{
+    margin-left: 5%;
+}

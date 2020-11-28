@@ -1,0 +1,56 @@
+body{
+    font-size: 130%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.row-content{
+    margin:  70px 0 70px 0;
+}
+.value{
+    background-color: rgb(241, 232, 217);
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.value div{
+    margin: 50px 0 50px 0;
+}
+.jumbotron{
+    background-color: rgb(220, 245, 237);
+    padding: 120px  0 50px 0;
+    text-align: center;
+}
+nav li:hover{
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+.img-nature{
+    margin-top: -2%;
+}
+.row-content{
+    margin: 70px 0 70px 0;
+    /* align-items: center; */
+}
+.content{
+    text-align: center;
+}
+.carousel-item h2 p{
+    color: black;
+}
+h1{
+    font-family: 'Architects Daughter', cursive;
+
+}
+.journey{
+    font-family: 'Raleway', sans-serif;
+
+}
+form{
+    font-size: 80%;
+}
+footer{
+    font-size: 70%;
+}
